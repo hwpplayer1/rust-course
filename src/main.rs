@@ -27,4 +27,8 @@ fn main() {
     let e:isize = -200;
     let e_size = mem::size_of_val(&e);
     println!("e = {} and it's size {} your computer's architecture {} ", e, e_size, e_size*8);
+
+    let f:usize = 200;
+    let f_size = mem::size_of_val(&f);
+    println!("f = {} and it's size {} your computer's architecture {} ", f, f_size, f_size*8);
 }
