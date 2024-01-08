@@ -1,3 +1,4 @@
+use std::char;
 #[allow(dead_code)]
 #[allow(unused_variables)]
 
@@ -31,4 +32,7 @@ fn main() {
     let f:usize = 200;
     let f_size = mem::size_of_val(&f);
     println!("f = {} and it's size {} your computer's architecture {} ", f, f_size, f_size*8);
+
+    let g:char = 'g'; // _,;+%'!? can be char
+    println!("g = {} and it's size {}", g,mem::size_of_val(&g));
 }
