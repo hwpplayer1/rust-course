@@ -39,4 +39,7 @@ fn main() {
     // f32 or f64 can't be u , it is signed by default IEEE754 ile none, can be assigned +- infinite values
     let h:f32 = 2.00000000005;
     println!("h = {} and it's size {}", h,mem::size_of_val(&h));
+
+    let i:bool = false; // true
+    println!("i = {} and it's size {}", i,mem::size_of_val(&i));
 }
