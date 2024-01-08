@@ -23,4 +23,8 @@ fn main() {
     // let d : = 123456789;
     let d = 123456789;
     print!("d = {} and size {} byte", d,mem::size_of_val(&d));
+
+    let e:isize = -200;
+    let e_size = mem::size_of_val(&e);
+    println!("e = {} and it's size {} your computer's architecture {} ", e, e_size, e_size*8);
 }
