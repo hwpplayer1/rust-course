@@ -35,4 +35,8 @@ fn main() {
 
     let g:char = 'g'; // _,;+%'!? can be char
     println!("g = {} and it's size {}", g,mem::size_of_val(&g));
+
+    // f32 or f64 can't be u , it is signed by default IEEE754 ile none, can be assigned +- infinite values
+    let h:f32 = 2.00000000005;
+    println!("h = {} and it's size {}", h,mem::size_of_val(&h));
 }
